@@ -4,9 +4,9 @@ import Modal from "./Modal";
 
 const Profile = () => {
   const avatarUrl = useRef(
-    "https://avatarfiles.alphacoders.com/161/161002.jpg"
+    "https://github.com/TonySilva7.png"
   );
-  
+
   const [modalOpen, setModalOpen] = useState(false);
 
   const updateAvatar = (imgSrc: string) => {
@@ -29,7 +29,7 @@ const Profile = () => {
           <PencilIcon />
         </button>
       </div>
-      <h2 className="text-white font-bold mt-6">Mack Aroney</h2>
+      <h2 className="text-white font-bold mt-6">Tony Silva</h2>
       <p className="text-gray-500 text-xs mt-2">Software Engineer</p>
       {modalOpen && (
         <Modal
