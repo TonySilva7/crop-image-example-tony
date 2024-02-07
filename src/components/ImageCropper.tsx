@@ -116,7 +116,7 @@ const ImageCropper = ({ closeModal, updateAvatar }: ImageCropperProps) => {
           <ReactCrop
             crop={myCrop}
             onChange={(pixelCrop, percentCrop) => setMyCrop(percentCrop)}
-            
+
             // comente as opções abaixo para deixar o usuário criar um crop livremente
             circularCrop
             keepSelection
@@ -129,6 +129,7 @@ const ImageCropper = ({ closeModal, updateAvatar }: ImageCropperProps) => {
               alt="Upload"
               style={{ maxHeight: "70vh" }}
               onLoad={onImageLoad}
+              
             />
           </ReactCrop>
           <button
