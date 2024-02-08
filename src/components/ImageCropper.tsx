@@ -90,7 +90,7 @@ const ImageCropper = ({ closeModal, updateAvatar }: ImageCropperProps) => {
       // Cria um objeto File a partir do Blob
       const file = new File([blob], `${Date.now()}.png`, { type: "image/png" });
 
-      window.open(URL.createObjectURL(file));
+      // window.open(URL.createObjectURL(file));
 
       const formData = new FormData();
       formData.append("avatar", file);
